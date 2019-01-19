@@ -24,7 +24,8 @@ body {
 
 #wrapper {
     overflow: hidden;
-    position: fixed;
+    position: relative;
+    height: 100%;
 }
 
 #backgroundSquare {
