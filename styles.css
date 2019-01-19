@@ -21,6 +21,11 @@ body {
     background-repeat: no-repeat;
 }
 
+#wrapper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 #backgroundSquare {
     z-index: -999;
     position: absolute;
@@ -207,7 +212,7 @@ Section for small phones
     body {
         overflow: hidden!important;
     }
-    
+
     .myName {
         font-size: 150%;
         padding-bottom: 10px;
