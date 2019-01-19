@@ -4,12 +4,12 @@ html, head, body, p, h1, h2, h3, h4, h5, div, img {
 }
 
 html {
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 head, body {
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -19,8 +19,6 @@ body {
     background-image: url("images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 #backgroundSquare {
