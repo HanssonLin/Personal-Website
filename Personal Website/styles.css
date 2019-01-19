@@ -1,0 +1,206 @@
+html, head, body, p, h1, h2, h3, h4, h5, div, img {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+head, body {
+    height: 100%;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#backgroundSquare {
+    z-index: -999;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    color: #db4c3d;
+    opacity: 0.75;
+}
+
+#main {
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-right: 50px;
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    box-sizing: border-box;
+}
+
+.myName {
+    padding-right: 2vw;
+    padding-bottom: 15px;
+    font-family: 'Kaushan Script', serif;
+    font-size: 200%;
+    color: white;
+}
+
+h2 {
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 2.2vw;
+    width: 52vw;
+}
+
+.aboutMe {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 100%;
+    font-weight: 300 !important;
+    color: white;
+    line-height: 1.4;
+}
+
+.coolStuff {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 90%;
+    color: white;
+    text-transform: uppercase;
+}
+
+.icon {
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width: 7vw;
+    filter: brightness(5);
+    transition: 0.1s;
+}
+
+
+.icon:hover {
+    filter: brightness(6);
+}
+
+.grayBox {
+    width: 40vw;
+    height: 10vh;
+    background-color: #55252288;
+    border-radius: 16px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2vw;
+    color: white;
+    position: relative;
+    opacity: 0;
+}
+
+.boxText {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    transition: 0.05s;
+    opacity: 0;
+}
+#polaroid {
+    width: 0;
+    height: 0;
+}
+@media screen and (min-height: 300px) and (max-height: 400px) {
+    .myName {
+        font-size: 150%;
+    }
+}
+/*
+CutoutSection for regular laptop/computer screens
+*/
+@media(min-width: 350px) and (max-width: 759px) {
+    .myName {
+        font-size: 300%;
+    }
+    h2 {
+        font-size: 120%;
+    }
+}
+@media(min-width: 760px) and (max-width: 1920px) {
+
+    #backgroundSquare {
+        width: 0;
+        height: 0;
+    }
+
+    #background-curve {
+        z-index: -999;
+        position: absolute;
+        width: 90vw;
+        height: 100vh;
+    }
+
+    #main {
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .myName {
+        font-size: 5vw;
+    }
+
+    .aboutMe {
+        font-size: 1.7vw;
+    }
+
+    .coolStuff {
+        font-size: 1.5vw;
+    }
+
+    .icon {
+        width: 3vw;
+    }
+
+    #icon_resume {
+        padding-right: 0;
+    }
+
+    .grayBox {
+        width: 40vw;
+    }
+
+    .boxText {
+        top: 1vh;
+        font-size: 1.5vw;
+    }
+
+    #cutout {
+        float: left;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    #polaroid {
+        position: relative;
+        height: 75vh;
+        width: auto;
+        transform: rotate(-7deg);
+        padding-right: 1px;
+        top: 60px;
+        left: 170px;
+    }
+
+}
+/*
+Section for small phones
+*/
+@media screen and (min-height: 300px) and (max-height: 400px) and (max-width: 830px){
+    .myName {
+        font-size: 150%;
+        padding-bottom: 10px;
+    }
+    h2 {
+        width: 100vw;
+        padding-bottom: 12px;
+    }
+}
