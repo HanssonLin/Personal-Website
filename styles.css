@@ -190,19 +190,26 @@ CutoutSection for regular laptop/computer screens
     }
 
     #cutout {
+        position: relative;
         float: left;
         width: 50vw;
         height: 100vh;
     }
 
     #polaroid {
-        position: relative;
+        
+        position: absolute;
         height: 75vh;
         width: auto;
         transform: rotate(-7deg);
-        padding-right: 1px;
-        top: 60px;
+        top: 50px;
         left: 170px;
+        
+        border: 1px solid darkgrey;
+        background-color: white;
+        padding: 15px 15px 60px 15px;
+        box-shadow: 5px 10px 10px #444;
+        
     }
 
 }
