@@ -94,7 +94,7 @@ h2 {
 .grayBox {
     width: 40vw;
     height: 10vh;
-    background-color: #55252288;
+    background-color: #08080844;
     border-radius: 16px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
@@ -208,7 +208,7 @@ CutoutSection for regular laptop/computer screens
         border: 1px solid darkgrey;
         background-color: white;
         padding: 15px 15px 60px 15px;
-        box-shadow: 5px 10px 10px #444;
+        box-shadow: 5px 10px 30px #55555588;
         
     }
 
